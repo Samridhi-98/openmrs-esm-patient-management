@@ -23,7 +23,7 @@ export const validationSchema = Yup.object({
   }),
   yearsEstimated: Yup.number().when('birthdateEstimated', {
     is: true,
-    then: Yup.number().required('yearsEstimateRequired').min(0, 'negativeYears'),
+    then: Yup.number().required('yearsEstimateRequired').min(0, 'negativeYears').max(120, 'maxYears'),
     otherwise: Yup.number().nullable(),
   }),
   monthsEstimated: Yup.number().min(0, 'negativeMonths'),

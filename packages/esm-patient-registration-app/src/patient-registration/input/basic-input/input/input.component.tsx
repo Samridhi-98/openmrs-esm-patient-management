@@ -20,6 +20,7 @@ export const Input: React.FC<any> = ({ checkWarning, ...props }) => {
     t('birthdayRequired')
     t('birthdayNotInTheFuture')
     t('negativeYears')
+    t('maxYears')
     t('negativeMonths')
     t('deathdayNotInTheFuture')
     t('invalidEmail')
